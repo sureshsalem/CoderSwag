@@ -31,10 +31,10 @@ object DataServices {
 
     val shirts = listOf(
         Product("shirt01","$20","shirt01"),
-        Product("shirt01","$30","shirt01"),
-        Product("shirt01","$40","shirt01"),
-        Product("shirt01","$50","shirt01"),
-        Product("shirt01","$60","shirt01")
+        Product("shirt02","$30","shirt02"),
+        Product("shirt03","$40","shirt03"),
+        Product("shirt04","$50","shirt04"),
+        Product("shirt05","$60","shirt05")
     )
 
 }
