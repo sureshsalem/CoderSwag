@@ -7,7 +7,7 @@
     android:layout_height="150dp">
 
     <ImageView
-        android:id="@+id/categoyimageView"
+        android:id="@+id/categoyImage"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
@@ -35,6 +35,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/categoyimageView"
+        app:layout_constraintTop_toTopOf="@+id/categoyImage"
         tools:text="HATS" />
 </androidx.constraintlayout.widget.ConstraintLayout>
