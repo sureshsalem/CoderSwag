@@ -20,26 +20,37 @@ object DataServices {
     )
 
     val hats = listOf(
-        Product("hat01","$5","hat01"),
-        Product("hat02","$6","hat02"),
-        Product("hat03","$7","hat03"),
-        Product("hat04","$8","hat04")
+        Product("hat01","$5","hat1"),
+        Product("hat02","$6","hat2"),
+        Product("hat03","$7","hat3"),
+        Product("hat04","$8","hat4")
     )
 
     val hoodies = listOf(
-        Product("hoodie01","$10","hoodie01"),
-        Product("hoodie02","$15","hoodie02"),
-        Product("hoodie03","$20","hoodie03"),
-        Product("hoodie04","$10","hoodie04")
+        Product("hoodie01","$10","hoodie1"),
+        Product("hoodie02","$15","hoodie2"),
+        Product("hoodie03","$20","hoodie3"),
+        Product("hoodie04","$10","hoodie4")
 
     )
 
     val shirts = listOf(
-        Product("shirt01","$20","shirt01"),
-        Product("shirt02","$30","shirt02"),
-        Product("shirt03","$40","shirt03"),
-        Product("shirt04","$50","shirt04"),
-        Product("shirt05","$60","shirt05")
+        Product("shirt01","$20","shirt1"),
+        Product("shirt02","$30","shirt2"),
+        Product("shirt03","$40","shirt3"),
+        Product("shirt04","$50","shirt4"),
+        Product("shirt05","$60","shirt5")
     )
+
+    val digitalGoods = listOf<Product>()
+
+    fun getProducts(category: String) : List<Product>{
+        return when(category){
+            "SHIRTS" -> shirts
+            "HOODIES" -> hoodies
+            "HATS" -> hats
+            else -> digitalGoods
+        }
+    }
 
 }
